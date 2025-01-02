@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            border-radius: 24px;
+            background: #fff;
+            padding: 24px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #00ff08;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .image .profile-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .profile-card .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-data .name {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .text-data .job {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .profile-card .media-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+
+        }
+
+        .media-buttons .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            height: 34px;
+            width: 34px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background-color: #41ff47;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="https://yt3.googleusercontent.com/VLOvpKYxd_ZTrjrorHo5VkqaO0lM1Zs2Zbe-Nrfx7UkWnUGKNbpgEcDxhSjDWS4UONdtyKddLQ=s900-c-k-c0x00ffffff-no-rj"
+                class="profile-img" alt="">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Chai Aur Code</span>
+            <span class="job">Guruji</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="#" class="link" style="background-color: #FF0000;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARdJREFUSEvtltENwjAMRN1JgE1gE5gEmAQ2gU2ATeirYhTSijgkbfpRS1VV1fH5zo6TRipZUwlXFuDJlJ+d1HtHfS0iK08Gvn/Z0/18uTffPPdwUciYwJfWcVtYc4APLokudAh8GwFUOVwdeA8Yto/CTMNwG2XtM0ZeGI9pO623D0xDUd+YIRlJxhptKA51Zv1XjU8icoyhtmvOrQ++JIp/SgJFgDVH3QWWBDTpLMa+OEgP+9g2LA5s3f9Fga29gUKDwNauzmmuLGCdu7F6mrdTtQEyxcj8DKzwkGBWW/ajYc70XCgRI3PwdAKUeV0aPHosakLUW5tHLwKWZPQiQBz/MtDNZ99md/X5p4ZJaxbGSXLlOFeT+g0yJDgffjlehQAAAABJRU5ErkJggg==" /></a>
+            <a href="#" class="link" style="background-color: #0077B5;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATVJREFUSEvtljFuwkAQRR8HoExDFVrOkEhwDhQBoghHSAfcgg4iRWlzAkSU9Gkpk0PkAORHCxoPNga0lhHySCtL6915npm/O65RktVK4nJx4D5wAyyBryKykhbxJ3BnYA/AS2y4Bz8CMwdZA62iweM/wMRBfoF60eB74MNBXoFu0WD5HwFPQAN4A4aAoo5qF3eczo3uFtD4CSPTj49Ym1Zu9bMRnITXc+87ATYPT/v6HRikfUQa+Ns5XoTNmhZYyrc2TZnLhccAH1MWfVzimMYGq7YqlzelXCXZWSywnMp5Vjk037S1jgHeS2MQaNuFHR0s1UqA1qRwdThrNit7/Vj1OVXVCYcH0l2BE3WoUq105F2Zlbiybq+Dx0mb/I1je+u23/ru4+/m3HVX8wdyTIv8X1NaxBtPCGofbR6NigAAAABJRU5ErkJggg==" /></a>
+            <a href="#" class="link" style="background-color: #d62976;"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAblJREFUSEvNl7EuREEUhr99EzS8gUaCREWEghq9Qkco2EQiUSn0qGkIjQbReAUV76Fg/2TOZtydmTt3drO702x2MzPf+f8558xsixGN1oi4jD14wjljnymjXnNcTCkWZBuYBxZyNvPmfAM3ne8nsXUxsEAvDWGh6QpgpxN4jwsx8BeQY2tObIJPVieGwFfO4pxNYyoF84/n2invzg+B+1Hrq9NRGbxHdQj8WyPVEsfOTUdy7I7GB/gCasF1SdWOZKpVgAIQRKOaI4t+klUVp8AGnQE2gTkHeAdugU8XlOChUQSWrVo4DVwCS5Wdn4Fd4AdQcobqvghsao+A04iiQ+AsoboIrCagkngCliPgB2DNqQ01nyKwLXoEViLge2Dd9QDZXR1FYLP6wNkZYu8D54O22upwCrgAVitkqd1zpRRrQEWKxbG2p767Acw6+Adw56C6jYrKSUWviGM9OHXVpaDaTwFbc+l5gaTAFowWq67fvA61lXGb/WtWoV7tN/eI+MY/1/Zq7VhnWWOqlx/dtSHFsluqh/4QUFSDgjd++hh86I+96jnKgVzr+37eliRR9pqx/yeRrSR34h/wNmcf6GENxQAAAABJRU5ErkJggg==" /></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
